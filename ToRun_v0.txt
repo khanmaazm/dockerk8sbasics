@@ -1,0 +1,32 @@
+docker run hello-world
+
+docker create hello-world
+docker start -a <runidfromabove>
+           OR 
+docker ps 
+docker ps --all --------check container id and image id for hello-world
+
+docker run -it <imageid>
+
+docker start -a <containerid>
+
+docker exec -it <containerid> sh
+
+docker run -it busybox sh
+
+docker run redis
+docker exec <containerid> redis-cli
+docker exec -it <containerid> redis-cli
+
+
+
+
+docker inspect <containerid>
+docker logs <containerid>
+
+
+
+docker stop <containerid>
+docker kill <containerid>
+docker system prune # deletes images as well
+

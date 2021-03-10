@@ -1,0 +1,13 @@
+docker build .
+docker run -p 8082:8082 <getimageidfromdockerps>
+
+
+docker build -t khanmaaz/firstdocker:1 .
+docker run -p 8082:8082  khanmaaz/firstdocker:1
+docker run -it -v $(pwd):/app khanmaaz/firstdocker:1 sh
+docker run <container> npm run test -- --coverage   #ensures prompt comes back to user
+
+#specifying 
+docker build -f Dockerfile2 .
+docker build -t khanmaaz/createwithdockerfilename:1 -f Dockerfile2 .
+
